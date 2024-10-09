@@ -1,0 +1,11 @@
+Algoritmo Cronometro
+	Para Horas<-0 Hasta 23
+		Para minutos <-0 Hasta 59
+			Para segundo <-0 Hasta 59
+				Escribir Horas ":" minutos ":" segundo
+				Esperar 1 Segundos
+				Limpiar Pantalla
+			Fin Para
+		Fin Para
+	Fin Para
+FinAlgoritmo
