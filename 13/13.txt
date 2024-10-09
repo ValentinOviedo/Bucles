@@ -1,0 +1,29 @@
+Proceso Menu
+    Definir opcion Como Entero
+	
+    Repetir
+        Escribir "Seleccione una opción:"
+        Escribir "1. Opción 1"
+        Escribir "2. Opción 2"
+        Escribir "3. Opción 3"
+        Escribir "4. Salir"
+        Leer opcion
+		
+        Segun opcion Hacer
+            1:
+                Escribir "Has seleccionado la Opción 1."
+                // Aquí puedes agregar más lógica para la Opción 1
+            2:
+                Escribir "Has seleccionado la Opción 2."
+                // Aquí puedes agregar más lógica para la Opción 2
+            3:
+                Escribir "Has seleccionado la Opción 3."
+                // Aquí puedes agregar más lógica para la Opción 3
+            4:
+                Escribir "Saliendo del programa..."
+            De Otro Modo:
+                Escribir "Opción no válida, por favor elija otra."
+        Fin Segun
+		
+	Hasta que opcion = 4
+Fin Proceso
