@@ -1,0 +1,27 @@
+Algoritmo primos
+	Mostrar  "Introduce un número:"
+	Leer num
+	
+	Si num <= 1 Entonces
+		Mostrar "El número no es primo."
+		SiNo Si num = 2 Entonces
+				Mostrar "El número es primo"
+			SiNo
+				primo<- Verdadero
+				raiz2<- raiz(num)
+			
+				Para i<-2 Hasta trunc(raiz2) +1 Hacer
+					Si num%i=0 Entonces
+						primo<- Falso
+					
+					FinSi
+				FinPara
+			
+				SI primo Entonces
+					Mostrar "El número ", num, " es primo."
+				SiNo
+					Mostrar "El número ", num, " no es primo."
+				FinSi
+		FinSi
+	FinSi
+FinAlgoritmo
