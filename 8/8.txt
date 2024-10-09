@@ -1,0 +1,21 @@
+Proceso PotenciaSinPotencia
+    Definir base Como Real
+    Definir exponente Como Entero
+    Definir resultado Como Real
+    Definir i Como Entero
+	
+    Escribir "Introduce la base (número real):"
+    Leer base
+    Escribir "Introduce el exponente (número entero positivo):"
+    Leer exponente
+	
+    // Inicializar el resultado
+    resultado <- 1
+	
+    // Calcular la potencia usando multiplicación repetida
+    Para i Desde 1 Hasta exponente Hacer
+        resultado <- resultado * base
+    Fin Para
+	
+    Escribir "El resultado de ", base, " elevado a ", exponente, " es:", resultado
+Fin Proceso
