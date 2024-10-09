@@ -1,0 +1,11 @@
+Algoritmo TablaMultiplicar1a5
+    Definir i, j Como Entero
+	
+    Para i Desde 1 Hasta 5 Hacer
+        Escribir "Tabla de multiplicar del ", i, ":"
+        Para j Desde 1 Hasta 10 Hacer
+            Escribir i, " x ", j, " = ", i * j
+        Fin Para
+        Escribir "" // Línea en blanco para separar las tablas
+    Fin Para
+Fin Algoritmo
