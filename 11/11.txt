@@ -1,0 +1,13 @@
+Algoritmo PagosMensuales
+    Definir pagoMensual Como Real
+    Definir i Como Entero
+	
+    pagoMensual <- 10  // Primer pago
+	
+    Escribir "Pagos mensuales:"
+    
+    Para i <- 1 Hasta 20 Hacer
+        Escribir "Mes ", i, ": ", pagoMensual
+        pagoMensual <- pagoMensual * 2  // Duplicar el pago cada mes
+    Fin Para
+Fin Algoritmo
