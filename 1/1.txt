@@ -1,0 +1,28 @@
+Algoritmo  AdivinaElNumero
+    Definir numeroSecreto, intento, intentosRestantes Como Entero
+    numeroSecreto <- Aleatorio(1, 100)
+    intentosRestantes <- 10
+	
+    Escribir "¡Bienvenido al juego de Adivinar el número"
+    Escribir "He generado un número entre 1 y 100."
+    Escribir "Tienes ", intentosRestantes, " intentos para adivinarlo."
+	
+    Mientras intentosRestantes > 0 Hacer
+        Leer intento
+        Si intento < 1 O intento > 100 Entonces
+            Escribir "Por favor, introduce un número entre 1 y 100."
+        Sino
+            intentosRestantes <- intentosRestantes - 1
+            Si intento < numeroSecreto Entonces
+                Escribir "El número es mayor. Te quedan ", intentosRestantes, " intentos."
+            Sino
+                Si intento > numeroSecreto Entonces
+                    Escribir "El número es menor. Te quedan ", intentosRestantes, " intentos."
+                Sino
+                    Escribir "¡Felicidades! Has adivinado el número ", numeroSecreto, " en ", 10 - intentosRestantes," intentos!"
+				Finsi
+			FinSi
+		FinSi
+	FinMientras
+	Escribir "Has agotado tus intentos. El número era ", numeroSecreto, "."
+FinAlgoritmo
