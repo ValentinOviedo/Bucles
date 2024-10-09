@@ -1,0 +1,36 @@
+Algoritmo IntervaloNumeros
+	suma <- 0
+	fueraIntervalo <- 0
+	igualALimite <- 0
+
+	Repetir
+		Escribir "Introduce el límite inferior del intervalo:"
+		Leer limiteInferior
+		Escribir "Introduce el límite superior del intervalo:"
+		Leer limiteSuperior
+		
+		Si limiteInferior >= limiteSuperior Entonces
+			Escribir "El límite inferior debe ser menor que el límite superior. Vuelve a intentarlo."
+		FinSi
+	Hasta Que limiteInferior < limiteSuperior
+	
+	Repetir
+		Escribir "Introduce un número (0 para terminar):"
+		Leer numero
+		
+		Si numero <> 0 Entonces
+			Si numero = limiteInferior O numero = limiteSuperior Entonces
+				igualALimite <- igualALimite + 1
+			FinSi
+			Si numero > limiteInferior Y numero < limiteSuperior Entonces
+				suma <- suma + numero
+			SiNo
+				fueraIntervalo <- fueraIntervalo + 1
+			FinSi
+		FinSi
+	Hasta Que numero = 0
+	
+	Escribir "La suma de los números dentro del intervalo es: ", suma
+	Escribir "La cantidad de números fuera del intervalo es: ", fueraIntervalo
+	Escribir "Se han introducido ", igualALimite, " número(s) igual(es) a los límites del intervalo."
+FinAlgoritmo
