@@ -1,0 +1,11 @@
+Proceso TablaMultiplicar
+    Definir numero, i Como Entero
+
+    Escribir "Introduce un número para mostrar su tabla de multiplicar:"
+    Leer numero
+
+    Escribir "Tabla de multiplicar del ", numero, ":"
+    Para i Desde 1 Hasta 10 Hacer
+        Escribir numero, " x ", i, " = ", numero * i
+    Fin Para
+Fin Proceso
